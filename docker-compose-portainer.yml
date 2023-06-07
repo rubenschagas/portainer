@@ -1,0 +1,31 @@
+version: '3.9'
+
+services:
+  portainer_service:
+    image: portainer/portainer-ce
+    container_name: portainer
+    volumes:
+      # If you are using WSL2, then the sock path must be both declared on the shell before running it up, and configured on the Portainer's Environment section as follow:
+      # export WSL2_DOCKER_SOCK_PATH=/mnt/wsl/shared-docker/docker.sock
+      - type: bind
+        source: ${WSL2_DOCKER_SOCK_PATH:-/var/run/docker.sock}
+        target: /var/run/docker.sock
+      - type: volume
+        source: portainer_data
+        target: /data
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+        mode: host
+      - target: 9000
+        published: 9000
+        protocol: tcp
+        mode: host
+      - target: 9443
+        published: 9443
+        protocol: tcp
+        mode: host
+
+volumes:
+  portainer_data:

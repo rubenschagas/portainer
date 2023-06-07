@@ -1,0 +1,13 @@
+{
+  "name": "portainer",
+  "description": "A Portainer automated deployment",
+  "version": "0.0.1",
+  "repository": "https://github.com/rubenschagas/portainer",
+  "author": "Rubens Chagas",
+  "private": true,
+  "license": "UNLICENSED",
+  "engines": {
+    "docker": ">=24.0.2",
+    "docker compose": ">=2.18.1"
+  }
+}
