@@ -12,7 +12,7 @@
 
 ## OVERVIEW
 
-The objective of this README.md document file is to provide help on how to run the automated deployment of a [local] containerized Portainer service using a Docker Compose yml file, a powerful, open source toolset based in a gui that allows you to easily build and manage containers in Docker.
+The objective of this README.md document file is to provide help on how to run the automated deployment of a [local] containerized Portainer service using a Docker Compose yml file, a powerful, lightweight management UI which allows you to easily build and manage containers your Docker host.
 
 ## PREREQUISITES
 
@@ -20,8 +20,6 @@ The objective of this README.md document file is to provide help on how to run t
 1. "docker": "24.0.2";
 2. "docker compose": "2.18.1".
 ```
-
-Please see the [Oficial Documentation](https://hub.docker.com/r/postgis/postgis).
 
 ## USE CASES
 
@@ -32,15 +30,19 @@ docker-compose -f docker-compose-portainer.yml up -d
 
 ## ACCESSING AND CONFIGURATION THE GUI
 
-1. Using a browser, access the address: [`localhost:9443`];
-2. Configure a admin user;  
-3. Using the wizard, configure the [local] environment through a socket connection, as follows:
+1. Using a browser, access the [local] address: `localhost:9443`;
+2. Configure a admin user account;  
+3. Using the Wizard tool, configure a [local] environment through a socket connection, as follows:
 
 ![](./assets/readMeMd/portainer1.png)
 
 ![](./assets/readMeMd/portainer2.png)
 
 ![](./assets/readMeMd/portainer3.png)
+
+Note:
+
+If you are using WSL2, then the sock path must be both declared on the shell before running it up, and configured on the Portainer's Environment section as a variable, as follows: `export WSL2_DOCKER_SOCK_PATH=/mnt/wsl/shared-docker/docker.sock`.
 
 See also:
 
