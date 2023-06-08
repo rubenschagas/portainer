@@ -28,7 +28,7 @@ docker-compose -f docker-compose-portainer.yml pull
 docker-compose -f docker-compose-portainer.yml up -d
 ```
 
-## ACCESSING AND CONFIGURATION THE GUI
+## ACCESSING AND CONFIGURATING THE GUI
 
 1. Using a browser, access the [local] address: `localhost:9443`;
 2. Configure a admin user account;  
