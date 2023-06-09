@@ -12,7 +12,9 @@
 
 ## OVERVIEW
 
-The objective of this README.md document file is to provide help on how to run the automated deployment of a [local] containerized Portainer service using a Docker Compose yml file, a powerful, lightweight management UI which allows you to easily build and manage containers your Docker host.
+The objective of this README.md document file is to provide help on how to run the automated deployment of a [local] containerized Portainer service, as a Proof of Concept (POC), using a Docker Compose yml file.
+
+The Portainer is a powerful, lightweight management UI which allows you to easily build and manage containers your Docker host.
 
 ## PREREQUISITES
 
