@@ -24,7 +24,7 @@ services:
         published: 9443
         protocol: tcp
         mode: host
-    restart: unless-stopped
+     restart: unless-stopped
 
 volumes:
   portainer_data:
