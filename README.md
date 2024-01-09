@@ -30,11 +30,11 @@ docker-compose -f docker-compose-portainer.yml pull
 docker-compose -f docker-compose-portainer.yml up -d
 ```
 
-## ACCESSING AND CONFIGURATING THE GUI
+## ACCESSING AND CONFIGURING THE GUI
 
 1. Using a browser, access the [local] address: `localhost:9000`;
 2. Configure an admin user account;  
-3. Using the Wizard tool, configure a [local] environment through a socket connection, as follows:
+3. Using the Wizard tool, configure an [local] environment through a socket connection, as follows:
 
 ![](./assets/readMeMd/portainer1.png)
 
