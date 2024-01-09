@@ -32,7 +32,7 @@ docker-compose -f docker-compose-portainer.yml up -d
 
 ## ACCESSING AND CONFIGURATING THE GUI
 
-1. Using a browser, access the [local] address: `localhost:9443`;
+1. Using a browser, access the [local] address: `localhost:9000`;
 2. Configure a admin user account;  
 3. Using the Wizard tool, configure a [local] environment through a socket connection, as follows:
 
@@ -48,8 +48,8 @@ If you are using WSL2, then the sock path must be both declared on the shell bef
 
 See also:
 
-[Oficial Instalation Guide](https://docs.portainer.io/start/install-ce)
+[Official Instalation Guide](https://docs.portainer.io/start/install-ce)
 
-[Oficial Documentation](https://docs.portainer.io/)
+[Official Documentation](https://docs.portainer.io/)
 
 [PostgresSQL DBMS service project](https://github.com/rubenschagas/postgres)
